@@ -1,0 +1,400 @@
+{
+  "seeds": {
+    "7": {
+      "threshold": {
+        "method": "threshold",
+        "seed": 7,
+        "per_mode": {
+          "tower_outage": {
+            "collars": 62,
+            "recall": 1.0,
+            "typed_recall": 0.0,
+            "missed": 0,
+            "median_ttd_h": 6.0,
+            "median_typed_ttd_h": null,
+            "precision": null
+          },
+          "firmware_bad": {
+            "collars": 317,
+            "recall": 0.621,
+            "typed_recall": 0.0,
+            "missed": 120,
+            "median_ttd_h": 327.0,
+            "median_typed_ttd_h": null,
+            "precision": null
+          },
+          "battery_fade": {
+            "collars": 25,
+            "recall": 1.0,
+            "typed_recall": 1.0,
+            "missed": 0,
+            "median_ttd_h": 219.0,
+            "median_typed_ttd_h": 219.0,
+            "precision": 0.111
+          },
+          "water_ingress": {
+            "collars": 12,
+            "recall": 1.0,
+            "typed_recall": 0.417,
+            "missed": 0,
+            "median_ttd_h": 30.5,
+            "median_typed_ttd_h": 24.0,
+            "precision": 0.833
+          },
+          "gps_drift": {
+            "collars": 15,
+            "recall": 1.0,
+            "typed_recall": 1.0,
+            "missed": 0,
+            "median_ttd_h": 114.0,
+            "median_typed_ttd_h": 114.0,
+            "precision": 1.0
+          }
+        },
+        "collars_flagged": 395,
+        "precision": 0.787,
+        "false_positive_collars": 84,
+        "noisy_group_flagged": 72,
+        "noisy_group_size": 72,
+        "recall_all": 0.722,
+        "alerts": 1175,
+        "incidents": 1175,
+        "tower_warnings": {
+          "towers_warned": 4,
+          "followed_by_outage": 1,
+          "median_lead_h": 4.0
+        },
+        "runtime_s": 0.5
+      },
+      "rules": {
+        "method": "rules",
+        "seed": 7,
+        "per_mode": {
+          "tower_outage": {
+            "collars": 62,
+            "recall": 1.0,
+            "typed_recall": 1.0,
+            "missed": 0,
+            "median_ttd_h": 3.0,
+            "median_typed_ttd_h": 3.0,
+            "precision": 1.0
+          },
+          "firmware_bad": {
+            "collars": 317,
+            "recall": 1.0,
+            "typed_recall": 1.0,
+            "missed": 0,
+            "median_ttd_h": 16.0,
+            "median_typed_ttd_h": 16.0,
+            "precision": 1.0
+          },
+          "battery_fade": {
+            "collars": 25,
+            "recall": 1.0,
+            "typed_recall": 1.0,
+            "missed": 0,
+            "median_ttd_h": 114.0,
+            "median_typed_ttd_h": 114.0,
+            "precision": 1.0
+          },
+          "water_ingress": {
+            "collars": 12,
+            "recall": 1.0,
+            "typed_recall": 1.0,
+            "missed": 0,
+            "median_ttd_h": 6.5,
+            "median_typed_ttd_h": 6.5,
+            "precision": 1.0
+          },
+          "gps_drift": {
+            "collars": 15,
+            "recall": 1.0,
+            "typed_recall": 1.0,
+            "missed": 0,
+            "median_ttd_h": 59.0,
+            "median_typed_ttd_h": 59.0,
+            "precision": 1.0
+          }
+        },
+        "collars_flagged": 431,
+        "precision": 1.0,
+        "false_positive_collars": 0,
+        "noisy_group_flagged": 0,
+        "noisy_group_size": 72,
+        "recall_all": 1.0,
+        "alerts": 47,
+        "incidents": 46,
+        "tower_warnings": {
+          "towers_warned": 4,
+          "followed_by_outage": 1,
+          "median_lead_h": 4.0
+        },
+        "runtime_s": 1.2
+      },
+      "rules+anomaly": {
+        "method": "rules+anomaly",
+        "seed": 7,
+        "per_mode": {
+          "tower_outage": {
+            "collars": 62,
+            "recall": 1.0,
+            "typed_recall": 1.0,
+            "missed": 0,
+            "median_ttd_h": 3.0,
+            "median_typed_ttd_h": 3.0,
+            "precision": 1.0
+          },
+          "firmware_bad": {
+            "collars": 317,
+            "recall": 1.0,
+            "typed_recall": 1.0,
+            "missed": 0,
+            "median_ttd_h": 16.0,
+            "median_typed_ttd_h": 16.0,
+            "precision": 1.0
+          },
+          "battery_fade": {
+            "collars": 25,
+            "recall": 1.0,
+            "typed_recall": 1.0,
+            "missed": 0,
+            "median_ttd_h": 102.0,
+            "median_typed_ttd_h": 102.0,
+            "precision": 0.962
+          },
+          "water_ingress": {
+            "collars": 12,
+            "recall": 1.0,
+            "typed_recall": 1.0,
+            "missed": 0,
+            "median_ttd_h": 6.5,
+            "median_typed_ttd_h": 6.5,
+            "precision": 1.0
+          },
+          "gps_drift": {
+            "collars": 15,
+            "recall": 1.0,
+            "typed_recall": 1.0,
+            "missed": 0,
+            "median_ttd_h": 34.0,
+            "median_typed_ttd_h": 34.0,
+            "precision": 1.0
+          }
+        },
+        "collars_flagged": 432,
+        "precision": 0.998,
+        "false_positive_collars": 1,
+        "noisy_group_flagged": 1,
+        "noisy_group_size": 72,
+        "recall_all": 1.0,
+        "alerts": 79,
+        "incidents": 55,
+        "tower_warnings": {
+          "towers_warned": 4,
+          "followed_by_outage": 1,
+          "median_lead_h": 4.0
+        },
+        "runtime_s": 29.6
+      }
+    },
+    "2026": {
+      "threshold": {
+        "method": "threshold",
+        "seed": 2026,
+        "per_mode": {
+          "tower_outage": {
+            "collars": 63,
+            "recall": 1.0,
+            "typed_recall": 0.0,
+            "missed": 0,
+            "median_ttd_h": 6.0,
+            "median_typed_ttd_h": null,
+            "precision": null
+          },
+          "firmware_bad": {
+            "collars": 302,
+            "recall": 0.517,
+            "typed_recall": 0.0,
+            "missed": 146,
+            "median_ttd_h": 294.0,
+            "median_typed_ttd_h": null,
+            "precision": null
+          },
+          "battery_fade": {
+            "collars": 25,
+            "recall": 1.0,
+            "typed_recall": 1.0,
+            "missed": 0,
+            "median_ttd_h": 212.0,
+            "median_typed_ttd_h": 212.0,
+            "precision": 0.132
+          },
+          "water_ingress": {
+            "collars": 12,
+            "recall": 1.0,
+            "typed_recall": 0.667,
+            "missed": 0,
+            "median_ttd_h": 28.0,
+            "median_typed_ttd_h": 22.5,
+            "precision": 0.889
+          },
+          "gps_drift": {
+            "collars": 15,
+            "recall": 1.0,
+            "typed_recall": 1.0,
+            "missed": 0,
+            "median_ttd_h": 116.0,
+            "median_typed_ttd_h": 116.0,
+            "precision": 1.0
+          }
+        },
+        "collars_flagged": 345,
+        "precision": 0.786,
+        "false_positive_collars": 74,
+        "noisy_group_flagged": 56,
+        "noisy_group_size": 56,
+        "recall_all": 0.65,
+        "alerts": 988,
+        "incidents": 988,
+        "tower_warnings": {
+          "towers_warned": 2,
+          "followed_by_outage": 2,
+          "median_lead_h": 5.5
+        },
+        "runtime_s": 0.5
+      },
+      "rules": {
+        "method": "rules",
+        "seed": 2026,
+        "per_mode": {
+          "tower_outage": {
+            "collars": 63,
+            "recall": 1.0,
+            "typed_recall": 1.0,
+            "missed": 0,
+            "median_ttd_h": 3.0,
+            "median_typed_ttd_h": 3.0,
+            "precision": 1.0
+          },
+          "firmware_bad": {
+            "collars": 302,
+            "recall": 1.0,
+            "typed_recall": 1.0,
+            "missed": 0,
+            "median_ttd_h": 17.0,
+            "median_typed_ttd_h": 17.0,
+            "precision": 1.0
+          },
+          "battery_fade": {
+            "collars": 25,
+            "recall": 1.0,
+            "typed_recall": 1.0,
+            "missed": 0,
+            "median_ttd_h": 116.0,
+            "median_typed_ttd_h": 116.0,
+            "precision": 1.0
+          },
+          "water_ingress": {
+            "collars": 12,
+            "recall": 1.0,
+            "typed_recall": 1.0,
+            "missed": 0,
+            "median_ttd_h": 6.0,
+            "median_typed_ttd_h": 6.0,
+            "precision": 1.0
+          },
+          "gps_drift": {
+            "collars": 15,
+            "recall": 1.0,
+            "typed_recall": 1.0,
+            "missed": 0,
+            "median_ttd_h": 59.0,
+            "median_typed_ttd_h": 59.0,
+            "precision": 1.0
+          }
+        },
+        "collars_flagged": 418,
+        "precision": 0.998,
+        "false_positive_collars": 1,
+        "noisy_group_flagged": 0,
+        "noisy_group_size": 56,
+        "recall_all": 1.0,
+        "alerts": 52,
+        "incidents": 50,
+        "tower_warnings": {
+          "towers_warned": 2,
+          "followed_by_outage": 2,
+          "median_lead_h": 5.5
+        },
+        "runtime_s": 1.2
+      },
+      "rules+anomaly": {
+        "method": "rules+anomaly",
+        "seed": 2026,
+        "per_mode": {
+          "tower_outage": {
+            "collars": 63,
+            "recall": 1.0,
+            "typed_recall": 1.0,
+            "missed": 0,
+            "median_ttd_h": 3.0,
+            "median_typed_ttd_h": 3.0,
+            "precision": 1.0
+          },
+          "firmware_bad": {
+            "collars": 302,
+            "recall": 1.0,
+            "typed_recall": 1.0,
+            "missed": 0,
+            "median_ttd_h": 17.0,
+            "median_typed_ttd_h": 17.0,
+            "precision": 1.0
+          },
+          "battery_fade": {
+            "collars": 25,
+            "recall": 1.0,
+            "typed_recall": 1.0,
+            "missed": 0,
+            "median_ttd_h": 104.0,
+            "median_typed_ttd_h": 104.0,
+            "precision": 1.0
+          },
+          "water_ingress": {
+            "collars": 12,
+            "recall": 1.0,
+            "typed_recall": 1.0,
+            "missed": 0,
+            "median_ttd_h": 6.0,
+            "median_typed_ttd_h": 6.0,
+            "precision": 1.0
+          },
+          "gps_drift": {
+            "collars": 15,
+            "recall": 1.0,
+            "typed_recall": 1.0,
+            "missed": 0,
+            "median_ttd_h": 34.0,
+            "median_typed_ttd_h": 34.0,
+            "precision": 1.0
+          }
+        },
+        "collars_flagged": 418,
+        "precision": 0.998,
+        "false_positive_collars": 1,
+        "noisy_group_flagged": 0,
+        "noisy_group_size": 56,
+        "recall_all": 1.0,
+        "alerts": 79,
+        "incidents": 53,
+        "tower_warnings": {
+          "towers_warned": 2,
+          "followed_by_outage": 2,
+          "median_lead_h": 5.5
+        },
+        "runtime_s": 35.7
+      }
+    }
+  },
+  "dev_seed": 7,
+  "heldout_seed": 2026
+}

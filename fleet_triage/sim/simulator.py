@@ -3,8 +3,8 @@
 It produces hourly telemetry for about 30 days and plants failure modes with ground truth:
 
 * ``battery_fade``   cell degradation: capacity falls and self-discharge rises, so night drain climbs.
-* ``tower_outage``   a tower stops sending heartbeats and every collar on it loses uplink. One outage
-                     follows a storm that flattens a tower with an aged battery; one is a sudden backhaul fault.
+* ``tower_outage``   a tower stops sending heartbeats and every collar on it loses uplink. Storms flatten
+                     towers with weak batteries; one tower also gets a sudden backhaul fault.
 * ``firmware_bad``   a staged rollout of version 3.5.0 raises battery drain and drops GPS fixes.
 * ``water_ingress``  the enclosure takes on water: temperature and signal go wrong, then the collar dies.
 * ``gps_drift``      a GPS module degrades: HDOP climbs and fixes slowly get worse.
@@ -83,9 +83,7 @@ def simulate(seed: int = 7, hours: int = HOURS) -> Fleet:
             )
         )
 
-    tower_farm = list(range(N_FARMS)) + sorted(
-        rng.choice(N_FARMS, N_TOWERS - N_FARMS, replace=False).tolist()
-    )
+    tower_farm = list(range(N_FARMS)) + sorted(rng.choice(N_FARMS, N_TOWERS - N_FARMS, replace=False).tolist())
     tower_farm.sort()
     towers: list[Tower] = []
     spot_count: dict[int, int] = {}
@@ -118,9 +116,9 @@ def simulate(seed: int = 7, hours: int = HOURS) -> Fleet:
     storm_day = int(rng.integers(8, 12))
     storm_days = [storm_day, storm_day + 1, storm_day + 2]
     region_cloud[storm_region, storm_days] = rng.uniform(0.06, 0.16, 3)
-    farm_cloud = np.clip(
-        region_cloud[farm_region] + 0.06 * rng.standard_normal((N_FARMS, days)), 0.04, 1.0
-    ).astype(np.float32)
+    farm_cloud = np.clip(region_cloud[farm_region] + 0.06 * rng.standard_normal((N_FARMS, days)), 0.04, 1.0).astype(
+        np.float32
+    )
     storm_hours = np.zeros(hours, dtype=bool)
     storm_hours[storm_day * 24 : (storm_day + 3) * 24] = True
 
@@ -129,9 +127,7 @@ def simulate(seed: int = 7, hours: int = HOURS) -> Fleet:
     farm_temp_bias = rng.standard_normal(N_FARMS)
     diurnal = 4.0 * np.sin(2 * np.pi * (hod - 9) / 24)
     # ambient per farm-hour
-    ambient = (
-        9.0 + diurnal[None, :] + region_temp_offset[farm_region][:, t_axis // 24] + farm_temp_bias[:, None]
-    )
+    ambient = 9.0 + diurnal[None, :] + region_temp_offset[farm_region][:, t_axis // 24] + farm_temp_bias[:, None]
     farm_storm = (farm_region == storm_region)[:, None] & storm_hours[None, :]
 
     # ---- per-device parameters ---------------------------------------------------------------
@@ -155,9 +151,7 @@ def simulate(seed: int = 7, hours: int = HOURS) -> Fleet:
     storm_farm_towers = [t.idx for t in towers if farm_region[t.farm_idx] == storm_region]
     storm_farm_towers = [t for t in storm_farm_towers if towers[t].farm_idx != noisy_farm]
     weak_tower = int(rng.choice(storm_farm_towers))
-    other_towers = [
-        t.idx for t in towers if farm_region[t.farm_idx] != storm_region and t.farm_idx != noisy_farm
-    ]
+    other_towers = [t.idx for t in towers if farm_region[t.farm_idx] != storm_region and t.farm_idx != noisy_farm]
     fault_tower = int(rng.choice(other_towers))
     fault_start = int(rng.integers(380, 560))
     fault_len = int(rng.integers(10, 20))
@@ -282,7 +276,9 @@ def simulate(seed: int = 7, hours: int = HOURS) -> Fleet:
         attempts = np.where(alive & (tower_online[dev_tower, h] == 1), attempts, 0)
         ok = attempts > 0
         uplink[:, h] = attempts / 4
-        out["battery"][ok, h] = np.round(batt[ok], 1)
+        # the fuel gauge reading carries a little measurement noise
+        reading = np.clip(batt + 0.25 * rng.standard_normal(n), 0, 100)
+        out["battery"][ok, h] = np.round(reading[ok], 1)
         out["solar_ma"][ok, h] = solar[ok]
         out["signal_dbm"][ok, h] = signal[ok]
         out["temp_c"][ok, h] = temp[ok]
