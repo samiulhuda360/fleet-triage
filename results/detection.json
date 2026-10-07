@@ -64,7 +64,7 @@
           "followed_by_outage": 1,
           "median_lead_h": 4.0
         },
-        "runtime_s": 0.5
+        "runtime_s": 0.2
       },
       "rules": {
         "method": "rules",
@@ -129,7 +129,7 @@
           "followed_by_outage": 1,
           "median_lead_h": 4.0
         },
-        "runtime_s": 1.2
+        "runtime_s": 0.6
       },
       "rules+anomaly": {
         "method": "rules+anomaly",
@@ -194,7 +194,7 @@
           "followed_by_outage": 1,
           "median_lead_h": 4.0
         },
-        "runtime_s": 29.6
+        "runtime_s": 11.9
       }
     },
     "2026": {
@@ -261,7 +261,7 @@
           "followed_by_outage": 2,
           "median_lead_h": 5.5
         },
-        "runtime_s": 0.5
+        "runtime_s": 0.2
       },
       "rules": {
         "method": "rules",
@@ -326,7 +326,7 @@
           "followed_by_outage": 2,
           "median_lead_h": 5.5
         },
-        "runtime_s": 1.2
+        "runtime_s": 0.5
       },
       "rules+anomaly": {
         "method": "rules+anomaly",
@@ -391,7 +391,7 @@
           "followed_by_outage": 2,
           "median_lead_h": 5.5
         },
-        "runtime_s": 35.7
+        "runtime_s": 11.4
       }
     }
   },

@@ -22,18 +22,20 @@ Format = Literal["json", "slack", "telegram"]
 SEVERITY_MARK = {"critical": "[CRITICAL]", "high": "[HIGH]", "medium": "[MEDIUM]", "low": "[LOW]"}
 
 
-def incident_payload(fleet: Fleet, inc: Incident, kind: str, hour: int, severity: str | None = None) -> dict:
+def incident_payload(
+    fleet: Fleet, inc: Incident, kind: str, hour: int, severity: str | None = None, title: str | None = None
+) -> dict:
     farms = sorted(fleet.farms[i].name for i in inc.farms)
     return {
         "event": f"incident.{kind}",
         "incident_id": inc.id,
         "type": inc.type,
         "severity": severity or inc.severity,
-        "title": inc.title,
+        "title": title or inc.title,
         "at": fleet.hour_to_time(hour).isoformat(),
         "opened_at": fleet.hour_to_time(inc.opened_hour).isoformat(),
         "impact": {
-            "collars": len(inc.devices),
+            "collars": sum(1 for h in inc.devices.values() if h <= hour),  # impact as it was at that hour
             "farms": len(inc.farms),
             "farm_names": farms[:10],
             "towers": sorted(fleet.towers[t].id for t in inc.towers),
@@ -133,5 +135,7 @@ def notifications(fleet: Fleet, incidents: Iterable[Incident], until_hour: int |
     for inc in incidents:
         for n in inc.notifications:
             if until_hour is None or n["hour"] <= until_hour:
-                out.append((n["hour"], incident_payload(fleet, inc, n["kind"], n["hour"], n["severity"])))
+                out.append(
+                    (n["hour"], incident_payload(fleet, inc, n["kind"], n["hour"], n["severity"], n.get("title")))
+                )
     return [p for _, p in sorted(out, key=lambda x: x[0])]

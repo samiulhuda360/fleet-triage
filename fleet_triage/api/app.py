@@ -201,7 +201,7 @@ def create_app(state: AppState | None = None) -> FastAPI:
         kb = by_id(load_kb()).get(TYPE_META[inc.type]["kb"])
         notes = []
         for n in inc.notifications:
-            p = incident_payload(f, inc, n["kind"], n["hour"], n["severity"])
+            p = incident_payload(f, inc, n["kind"], n["hour"], n["severity"], n.get("title"))
             notes.append(
                 {"at": t_iso(n["hour"]), "kind": n["kind"], "severity": n["severity"], "slack": render(p, "slack")}
             )
@@ -237,7 +237,7 @@ def create_app(state: AppState | None = None) -> FastAPI:
                 if inc.type in ("tower_power_low",) or seen[inc.type] >= 2:
                     continue
                 d = next(iter(inc.devices), None)
-                if d is not None:
+                if d is not None and f.devices[d] not in hits:
                     seen[inc.type] += 1
                     hits.append(f.devices[d])
         out = []

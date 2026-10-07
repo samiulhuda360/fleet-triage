@@ -112,11 +112,11 @@ class IncidentBuilder:
         if not inc.notifications:
             inc.severity = new
             inc.title = self._title(inc)
-            inc.notifications.append({"hour": hour, "kind": "opened", "severity": new})
+            inc.notifications.append({"hour": hour, "kind": "opened", "severity": new, "title": inc.title})
         elif _sev_index(new) > _sev_index(inc.severity):
             inc.severity = new
             inc.title = self._title(inc)
-            inc.notifications.append({"hour": hour, "kind": "escalated", "severity": new})
+            inc.notifications.append({"hour": hour, "kind": "escalated", "severity": new, "title": inc.title})
         else:
             inc.title = self._title(inc)
 
@@ -132,7 +132,9 @@ class IncidentBuilder:
             quiet = QUIET_HOURS.get(key.split(":")[0], DEFAULT_QUIET)
             if hour - inc.last_hour > quiet:
                 inc.resolved_hour = inc.last_hour + 1
-                inc.notifications.append({"hour": hour, "kind": "resolved", "severity": inc.severity})
+                inc.notifications.append(
+                    {"hour": hour, "kind": "resolved", "severity": inc.severity, "title": inc.title}
+                )
                 del self.open[key]
                 for d in inc.devices:
                     self.member_of[d].discard(key)
