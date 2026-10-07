@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"firmware_bad\",\n \"article_id\": \"KB-03\",\n \"escalate\": true,\n \"escalation_reason\": \"Firmware 3.5.0 regression affecting 41 collars on the farm.\",\n \"reply_draft\": \"Hello,\\n\\nWe have received your message regarding gaps in the tracks and lower battery numbers. We are looking into an issue with firmware 3.5.0 affecting 41 collars on your farm.\\n\\nFleet support\",\n \"facts_used\": [\n  \"Burnt Hill Hills (F-39): 41 of 41 collars reported in the last 3 hours; median battery 51.0 % now vs 71.0 % three days ago.\",\n  \"Incident INC-0017 (open, critical): Firmware 3.5.0 regression: 317 collars on 6 farms; 41 collars on this farm.\"\n ]\n}",
+ "latency_s": 1.82,
+ "prompt_tokens": 1328,
+ "completion_tokens": 214
+}

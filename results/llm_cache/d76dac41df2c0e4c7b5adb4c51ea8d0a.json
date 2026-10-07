@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"setup_howto\",\n \"article_id\": \"KB-11\",\n \"escalate\": false,\n \"escalation_reason\": \"none\",\n \"reply_draft\": \"Hello Isla,\\n\\nTo add your new collars to the app, open the app menu and select add devices, then follow the on-screen prompts to scan or register each collar.\\n\\nFleet support\",\n \"facts_used\": [\n  \"Ticket received 16 Jul 20:00.\"\n ]\n}",
+ "latency_s": 1.31,
+ "prompt_tokens": 1214,
+ "completion_tokens": 117
+}

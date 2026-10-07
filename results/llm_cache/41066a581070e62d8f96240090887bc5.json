@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"water_ingress\",\n \"article_id\": \"KB-04\",\n \"escalate\": true,\n \"escalation_reason\": \"Collar C-11831 is affected by water ingress.\",\n \"reply_draft\": \"Hi Logan,\\n\\nWe have looked into collar C-11831 on Hawthorn Run. It has stopped reporting since yesterday morning, while the rest of the herd and the base towers are fine.\\n\\nFleet support\",\n \"facts_used\": [\n  \"Collar C-11831 (firmware 3.3.9, tower T-56): no report for 24 h (last 18 Jul 05:00); battery 96.0 %; night drain 0.25 %/h (was 0.26); in incident INC-0013.\"\n ]\n}",
+ "latency_s": 1.49,
+ "prompt_tokens": 1618,
+ "completion_tokens": 203
+}

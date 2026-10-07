@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"account_access\",\n \"article_id\": \"KB-09\",\n \"escalate\": true,\n \"escalation_reason\": \"Account access and password resets requiring email updates must be escalated.\",\n \"reply_draft\": \"Hello Isla, thank you for reaching out regarding your account access. Since your email address needs to be updated and you are locked out, I have escalated this issue to our support team so we can manually update your login details and restore access to your account. Fleet support\",\n \"facts_used\": [\n  \"Ticket received 29 Jul 08:00.\",\n  \"Silver Creek Ridge (F-09): 20 of 20 collars reported in the last 3 hours; median battery 96.0 % now vs 95.0 % three days ago.\"\n ]\n}",
+ "latency_s": 1.56,
+ "prompt_tokens": 1179,
+ "completion_tokens": 185
+}

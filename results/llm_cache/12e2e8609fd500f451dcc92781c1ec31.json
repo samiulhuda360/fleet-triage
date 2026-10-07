@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"firmware_bad\",\n \"article_id\": \"KB-03\",\n \"escalate\": true,\n \"escalation_reason\": \"Firmware 3.5.0 regression is affecting all 43 collars on the farm.\",\n \"reply_draft\": \"Hello Dean,\\n\\nWe have received your report regarding the battery levels on your collars at Three Pines Station. Our team is investigating an issue affecting your herd.\\n\\nFleet support\",\n \"facts_used\": [\n  \"Three Pines Station (F-30): 43 of 43 collars reported in the last 3 hours; median battery 84.0 % now vs 93.0 % three days ago.\",\n  \"Incident INC-0017 (open, critical): Firmware 3.5.0 regression: 317 collars on 6 farms; 43 collars on this farm.\"\n ]\n}",
+ "latency_s": 1.42,
+ "prompt_tokens": 1509,
+ "completion_tokens": 205
+}

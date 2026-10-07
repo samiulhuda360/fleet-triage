@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"collar_fit\",\n \"article_id\": \"KB-08\",\n \"escalate\": false,\n \"escalation_reason\": \"Collar C-10430 is healthy and reporting normally, matching the collar fit and strap wear article.\",\n \"reply_draft\": \"Hello Isla,\\n\\nThank you for reaching out about collar C-10430. Reviewing the data, the device is currently reporting normally with a healthy battery level and GPS fix. A collar found in the paddock often relates to fit, strap wear, or the collar slipping off the animal.\\n\\nFleet support\",\n \"facts_used\": [\n  \"Collar C-10430 (firmware 3.4.1, tower T-12): reporting; battery 56.0 %; night drain 0.33 %/h (was 0.32); GPS fix 95.0 %, HDOP 1.4 (was 1.4); temperature -0.2 C vs the farm; signal +0.4 dB vs its normal;\"\n ]\n}",
+ "latency_s": 1.52,
+ "prompt_tokens": 1356,
+ "completion_tokens": 245
+}

@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"weather_low_charge\",\n \"article_id\": \"KB-07\",\n \"escalate\": false,\n \"escalation_reason\": \"Low solar charge due to stormy weather is expected behaviour and does not require escalation.\",\n \"reply_draft\": \"Hi Alana, thanks for getting in touch about the battery levels on Kahikatea Downs. All 37 collars have reported recently. Over the last 3 days, sunshine at your location was 9% of a clear sky, which naturally reduces solar charging across the herd during grey or stormy weather. Fleet support\",\n \"facts_used\": [\n  \"Kahikatea Downs (F-27): 37 of 37 collars reported in the last 3 hours; median battery 62.0 % now vs 79.0 % three days ago.\",\n  \"Sunshine over the last 3 days at Kahikatea Downs: 9 % of a clear sky.\"\n ]\n}",
+ "latency_s": 1.76,
+ "prompt_tokens": 1453,
+ "completion_tokens": 211
+}

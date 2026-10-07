@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"billing\",\n \"article_id\": \"KB-10\",\n \"escalate\": true,\n \"escalation_reason\": \"The farmer is disputing the monthly invoice collar count and requesting a refund.\",\n \"reply_draft\": \"Hello,\\n\\nThank you for reaching out regarding your monthly invoice and collar count. We are looking into your billing details to check the active count for Kingfisher Farm.\\n\\nFleet support\",\n \"facts_used\": [\n  \"Ticket received 27 Jul 16:00.\",\n  \"Kingfisher Farm (F-32): 47 of 47 collars reported in the last 3 hours; median battery 96.0 % now vs 100.0 % three days ago.\"\n ]\n}",
+ "latency_s": 1.85,
+ "prompt_tokens": 1326,
+ "completion_tokens": 174
+}

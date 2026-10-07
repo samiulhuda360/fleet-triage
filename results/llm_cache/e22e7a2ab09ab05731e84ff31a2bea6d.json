@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n  \"category\": \"billing\",\n  \"article_id\": \"KB-10\",\n  \"escalate\": false,\n  \"escalation_reason\": \"Cancellation requests do not require escalation as they are simple account inquiries.\",\n  \"reply_draft\": \"Hello Aroha, thank you for reaching out regarding your subscription. You can manage your subscription and billing details directly through the farm app or by getting in touch with our support team with your account details. Best regards, Fleet support.\",\n  \"facts_used\": [\n    \"Ticket received 31 Jul 00:00.\"\n  ]\n}",
+ "latency_s": 1.51,
+ "prompt_tokens": 1208,
+ "completion_tokens": 135
+}

@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"gps_drift\",\n \"article_id\": \"KB-05\",\n \"escalate\": true,\n \"escalation_reason\": \"Collar C-11742 is experiencing GPS drift as indicated by high HDOP and affected by incident INC-0010.\",\n \"reply_draft\": \"Hi Jono,\\n\\nThanks for reaching out about collar C-11742 showing on the road while standing still. We have checked the device data and it matches a known GPS module drift pattern currently tracked under our maintenance system. Our team will review this behavior.\\n\\nFleet support\",\n \"facts_used\": [\n  \"Collar C-11742 (firmware 3.4.1, tower T-53): reporting; battery 100.0 %; night drain 0.27 %/h (was 0.27); GPS fix 85.0 %, HDOP 4.8 (was 1.5); temperature +0.4 C vs the farm; signal +0.0 dB vs its normal; in incident INC-0010.\"\n ]\n}",
+ "latency_s": 2.02,
+ "prompt_tokens": 1511,
+ "completion_tokens": 255
+}

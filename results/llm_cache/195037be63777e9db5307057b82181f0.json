@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n  \"category\": \"firmware_bad\",\n  \"article_id\": \"KB-03\",\n  \"escalate\": true,\n  \"escalation_reason\": \"Collars C-10472, C-10484, and C-10510 are running firmware 3.5.0 which is under investigation for battery and GPS issues.\",\n  \"reply_draft\": \"Hello Jack, thank you for reaching out regarding C-10472, C-10484, and C-10510. We have noted that these units are currently running firmware 3.5.0, which is experiencing known battery and GPS performance issues. Our team is looking into this closely. Fleet support\",\n  \"facts_used\": [\n    \"Collar C-10472 (firmware 3.5.0, tower T-13): reporting; battery 95.0 %; night drain 0.38 %/h (was 0.32); GPS fix 81.0 %, HDOP 1.7 (was 1.7); temperature -0.0 C vs the farm; signal +0.2 dB vs its normal; in incident INC-0017.\",\n    \"Collar C-10484 (firmware 3.5.0, tower T-13): reporting; battery 90.0 %; night drain 0.37 %/h (was 0.28); GPS fix 78.0 %, HDOP 1.4 (was 1.4); temperature +0.1 C vs the farm; signal +1.1 dB vs its normal; in incident INC-0017.\",\n    \"Collar C-10510 (firmware 3.5.0, tower T-13): reporting; battery 66.0 %; night drain 0.48 %/h (was 0.34); GPS fix 80.0 %, HDOP 1.2 (was 1.2); temperature +0.1 C vs the farm; signal -0.2 dB vs its normal; in incident INC-0017.\"\n  ]\n}",
+ "latency_s": 2.01,
+ "prompt_tokens": 1924,
+ "completion_tokens": 498
+}

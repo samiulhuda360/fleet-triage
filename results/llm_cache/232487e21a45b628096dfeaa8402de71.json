@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n  \"category\": \"billing\",\n  \"article_id\": \"KB-10\",\n  \"escalate\": false,\n  \"escalation_reason\": \"Account and billing questions do not require escalation.\",\n  \"reply_draft\": \"Hello,\\n\\nYou can find your monthly invoice by logging into your account portal and navigating to the billing or subscription section, where past statements are stored for download.\\n\\nFleet support\",\n  \"facts_used\": [\n    \"Ticket received 18 Jul 12:00.\"\n  ]\n}",
+ "latency_s": 1.56,
+ "prompt_tokens": 1309,
+ "completion_tokens": 124
+}

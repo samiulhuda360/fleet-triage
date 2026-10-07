@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n  \"category\": \"water_ingress\",\n  \"article_id\": \"KB-04\",\n  \"escalate\": true,\n  \"escalation_reason\": \"Collar C-10800 is affected by an open water ingress incident.\",\n  \"reply_draft\": \"Hello Quinn, thanks for reaching out about C-10800. We are looking into the issue with this collar and will follow up with you. Fleet support\",\n  \"facts_used\": [\n    \"Collar C-10800 (firmware 3.4.1, tower T-24): no report for 30 h (last 21 Jul 06:00); battery 89.0 %; night drain 0.26 %/h (was 0.28); in incident INC-0009.\",\n    \"Incident INC-0009 (open, high): Water ingress on Boulder Ridge: 2 collars; 2 collars on this farm.\"\n  ]\n}",
+ "latency_s": 1.57,
+ "prompt_tokens": 1379,
+ "completion_tokens": 230
+}

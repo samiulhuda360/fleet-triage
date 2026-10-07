@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n  \"category\": \"setup_howto\",\n  \"article_id\": \"KB-11\",\n  \"escalate\": false,\n  \"escalation_reason\": \"This is a standard how-to question about pairing collars.\",\n  \"reply_draft\": \"Hello,\\n\\nTo pair a new collar, open the farm app and navigate to the management menu to add the device. Follow the on-screen prompts to scan the QR code located on the collar panel. If the code does not scan immediately, ensure you have sufficient lighting or enter the serial number manually.\\n\\nFleet support\",\n  \"facts_used\": [\n    \"Ticket received 26 Jul 00:00.\"\n  ]\n}",
+ "latency_s": 1.86,
+ "prompt_tokens": 1399,
+ "completion_tokens": 159
+}

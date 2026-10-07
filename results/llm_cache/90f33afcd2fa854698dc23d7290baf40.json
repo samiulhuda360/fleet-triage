@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"firmware_bad\",\n \"article_id\": \"KB-03\",\n \"escalate\": true,\n \"escalation_reason\": \"Firmware 3.5.0 regression affecting collars on this farm.\",\n \"reply_draft\": \"Hello,\\n\\nThank you for reaching out about the herd not showing correctly. We are aware of an issue involving firmware version 3.5.0 affecting positions and gaps in tracks across 62 collars on your farm. We are looking into this.\\n\\nFleet support\",\n \"facts_used\": [\n  \"Incident INC-0017 (open, critical): Firmware 3.5.0 regression: 317 collars on 6 farms; 62 collars on this farm.\"\n ]\n}",
+ "latency_s": 1.57,
+ "prompt_tokens": 1414,
+ "completion_tokens": 172
+}

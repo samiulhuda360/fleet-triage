@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n  \"category\": \"setup_howto\",\n  \"article_id\": \"KB-11\",\n  \"escalate\": false,\n  \"escalation_reason\": \"This is a routine how-to inquiry about moving livestock to a run-off block with no hardware faults.\",\n  \"reply_draft\": \"Hello Finn,\\n\\nWhen moving your heifers to the run-off next week, you do not need to do anything with the collars or towers. The system will continue to track them automatically as they move.\\n\\nFleet support\",\n  \"facts_used\": [\n    \"Kingfisher Farm (F-32): 47 of 47 collars reported in the last 3 hours; median battery 96.0 % now vs 93.0 % three days ago.\"\n  ]\n}",
+ "latency_s": 1.47,
+ "prompt_tokens": 1351,
+ "completion_tokens": 181
+}

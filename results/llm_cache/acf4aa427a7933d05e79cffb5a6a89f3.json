@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"gps_drift\",\n \"article_id\": \"KB-05\",\n \"escalate\": true,\n \"escalation_reason\": \"Collar C-11667 is experiencing confirmed GPS drift.\",\n \"reply_draft\": \"Hello Hamish,\\n\\nWe have received your report regarding the position accuracy on C-11667. We are looking into this issue as part of incident INC-0003 and will investigate why the positions are wandering.\\n\\nFleet support\",\n \"facts_used\": [\n  \"Collar C-11667 (firmware 3.4.2, tower T-51): reporting; battery 96.0 %; night drain 0.33 %/h (was 0.3); GPS fix 85.0 %, HDOP 6.4 (was 3.0); temperature -0.0 C vs the farm; signal +0.9 dB vs its normal; in incident INC-0003.\",\n  \"Incident INC-0003 (open, medium): GPS drift on Willow Farm: 2 collars; 2 collars on this farm.\"\n ]\n}",
+ "latency_s": 1.5,
+ "prompt_tokens": 1568,
+ "completion_tokens": 263
+}

@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n  \"category\": \"gps_drift\",\n  \"article_id\": \"KB-05\",\n  \"escalate\": true,\n  \"escalation_reason\": \"Collar C-11854 is experiencing GPS drift.\",\n  \"reply_draft\": \"Hello Logan,\\n\\nThanks for reaching out about C-11854. We are looking into this report of position drift.\\n\\nFleet support\",\n  \"facts_used\": [\n    \"Collar C-11854 (firmware 3.3.9, tower T-55): reporting; battery 97.0 %; night drain 0.28 %/h (was 0.29); GPS fix 89.0 %, HDOP 4.9 (was 2.2); temperature +0.3 C vs the farm; signal +0.6 dB vs its normal; in incident INC-0006.\",\n    \"Incident INC-0006 (open, medium): GPS drift on Hawthorn Run: 1 collar; 1 collars on this farm.\"\n  ]\n}",
+ "latency_s": 1.67,
+ "prompt_tokens": 1519,
+ "completion_tokens": 250
+}

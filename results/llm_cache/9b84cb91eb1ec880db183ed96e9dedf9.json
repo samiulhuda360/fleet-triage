@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n  \"category\": \"gps_drift\",\n  \"article_id\": \"KB-05\",\n  \"escalate\": true,\n  \"escalation_reason\": \"Collar C-10363 is experiencing GPS module drift with rising HDOP.\",\n  \"reply_draft\": \"Hello, thank you for reaching out about collar C-10363. We can see that the position for this collar is drifting and we have escalated this hardware fault for further review. Fleet support\",\n  \"facts_used\": [\n    \"Collar C-10363 (firmware 3.4.1, tower T-11): reporting; battery 93.0 %; night drain 0.33 %/h (was 0.32); GPS fix 91.0 %, HDOP 4.1 (was 1.6); temperature +0.2 C vs the farm; signal -0.2 dB vs its normal; in incident INC-0002.\"\n  ]\n}",
+ "latency_s": 1.52,
+ "prompt_tokens": 1574,
+ "completion_tokens": 229
+}

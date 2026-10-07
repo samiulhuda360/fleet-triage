@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n  \"category\": \"weather_low_charge\",\n  \"article_id\": \"KB-07\",\n  \"escalate\": false,\n  \"escalation_reason\": \"Low solar charge during stormy weather is expected behaviour and does not require escalation.\",\n  \"reply_draft\": \"Hello Grace. We have checked Cabbage Tree Plains and all 28 collars are still reporting in. Sunshine over the last 3 days was down to 6 % of a clear sky, so it is normal to see lower battery levels across the herd during extended grey or stormy weather. There is no need to worry while the collars continue to report. Fleet support\",\n  \"facts_used\": [\n    \"Cabbage Tree Plains (F-07): 28 of 28 collars reported in the last 3 hours; median battery 65.0 % now vs 76.0 % three days ago.\",\n    \"Sunshine over the last 3 days at Cabbage Tree Plains: 6 % of a clear sky.\"\n  ]\n}",
+ "latency_s": 1.52,
+ "prompt_tokens": 1405,
+ "completion_tokens": 226
+}

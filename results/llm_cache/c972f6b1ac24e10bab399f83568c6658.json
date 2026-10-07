@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n  \"category\": \"poor_coverage\",\n  \"article_id\": \"KB-06\",\n  \"escalate\": false,\n  \"escalation_reason\": \"This is expected behavior for signal propagation in gullies and behind ridges.\",\n  \"reply_draft\": \"Hi Chloe,\\n\\nYes, that is expected behaviour. Collars located in gullies or behind ridges often experience patchy signals, and positions may sometimes arrive late or in bursts. All 72 collars at Fantail Run have reported in the last 3 hours.\\n\\nFleet support\",\n  \"facts_used\": [\n    \"Fantail Run (F-29): 72 of 72 collars reported in the last 3 hours; median battery 89.0 % now vs 84.0 % three days ago.\"\n  ]\n}",
+ "latency_s": 1.55,
+ "prompt_tokens": 1381,
+ "completion_tokens": 185
+}

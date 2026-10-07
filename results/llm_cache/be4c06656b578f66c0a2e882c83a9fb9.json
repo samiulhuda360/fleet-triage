@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"collar_fit\",\n \"article_id\": \"KB-08\",\n \"escalate\": false,\n \"escalation_reason\": \"Collar fit is a standard how-to question and does not require escalation.\",\n \"reply_draft\": \"Hi Aroha,\\n\\nWhen fitting collars on heifers, you should be able to comfortably fit two fingers flat between the strap and the animal's neck. It should be snug enough to keep the solar panel facing upward, but not tight enough to rub.\\n\\nFleet support\",\n \"facts_used\": []\n}",
+ "latency_s": 1.38,
+ "prompt_tokens": 1439,
+ "completion_tokens": 128
+}

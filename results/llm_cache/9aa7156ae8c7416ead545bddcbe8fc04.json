@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"collar_fit\",\n \"article_id\": \"KB-08\",\n \"escalate\": false,\n \"escalation_reason\": \"Collar fit questions are standard how-to inquiries and do not require escalation.\",\n \"reply_draft\": \"Hello Mere,\\n\\nRegarding collar C-10604, ensure the strap is snug enough to stay upright with the solar panel facing upward, but loose enough to prevent friction. You should be able to slide a flat hand comfortably beneath the strap. \\n\\nFleet support\",\n \"facts_used\": [\n  \"Collar C-10604 (firmware 3.4.2, tower T-19): reporting; battery 90.0 %; night drain 0.3 %/h (was 0.28); GPS fix 96.0 %, HDOP 1.4 (was 1.4); temperature +0.2 C vs the farm; signal +1.0 dB vs its normal;\"\n ]\n}",
+ "latency_s": 1.9,
+ "prompt_tokens": 1358,
+ "completion_tokens": 227
+}

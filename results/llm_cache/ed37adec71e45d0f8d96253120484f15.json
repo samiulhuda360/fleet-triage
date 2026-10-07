@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"weather_low_charge\",\n \"article_id\": \"KB-07\",\n \"escalate\": false,\n \"escalation_reason\": \"Battery levels and night drain are normal during this period of low sunshine.\",\n \"reply_draft\": \"Kia ora Wiremu, thanks for reaching out. During periods of grey or cloudy weather, it is quite normal to see a temporary drop in solar charge across the herd. Collar C-11058 is currently reporting normally with a healthy night drain. No action is needed at this stage. Fleet support\",\n \"facts_used\": [\n  \"Collar C-11058 (firmware 3.4.1, tower T-35): reporting; battery 87.0 %; night drain 0.3 %/h (was 0.29); GPS fix 99.0 %, HDOP 1.4 (was 1.4); temperature -0.0 C vs the farm; signal -3.4 dB vs its normal;\",\n  \"Sunshine over the last 3 days at Muddy Lane Valley: 33 % of a clear sky.\"\n ]\n}",
+ "latency_s": 1.62,
+ "prompt_tokens": 1474,
+ "completion_tokens": 255
+}

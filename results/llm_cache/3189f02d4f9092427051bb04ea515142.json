@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"battery_fade\",\n \"article_id\": \"KB-02\",\n \"escalate\": true,\n \"escalation_reason\": \"Collar C-11488 shows severe night-time drain and a dead battery indicating cell degradation.\",\n \"reply_draft\": \"Hello,\\n\\nWe have received your report regarding collar C-11488. Our system notes that the collar currently has no report, a battery level of 0.0 percent, and elevated night drain. Because this hardware fault requires attention, we have escalated the issue for further review.\\n\\nFleet support\",\n \"facts_used\": [\n  \"Collar C-11488 (firmware 3.4.2, tower T-47): no report for 54 h (last 17 Jul 03:00); battery 0.0 %; night drain 2.53 %/h (was 0.53); in incident INC-0014.\"\n ]\n}",
+ "latency_s": 1.73,
+ "prompt_tokens": 1529,
+ "completion_tokens": 228
+}

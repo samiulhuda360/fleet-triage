@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n  \"category\": \"tower_outage\",\n  \"article_id\": \"KB-01\",\n  \"escalate\": true,\n  \"escalation_reason\": \"Tower T-27 North ridge tower is offline and requires technical escalation.\",\n  \"reply_draft\": \"Thanks for getting in touch about tower T-27 on the North ridge. We have logged this for our technical team to investigate. Fleet support\",\n  \"facts_used\": [\n    \"Tower T-27 North ridge tower: OFFLINE (no heartbeat).\"\n  ]\n}",
+ "latency_s": 1.37,
+ "prompt_tokens": 1502,
+ "completion_tokens": 127
+}

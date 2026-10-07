@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n  \"category\": \"tower_outage\",\n  \"article_id\": \"KB-01\",\n  \"escalate\": true,\n  \"escalation_reason\": \"Base tower T-36 is offline and the issue matches a tower outage.\",\n  \"reply_draft\": \"Thanks for getting in touch. We can see that tower T-36 is currently offline, which explains why the collars have stopped reporting. Our team has been alerted to investigate the tower issue. Fleet support\",\n  \"facts_used\": [\n    \"Tower T-36 River flat tower: OFFLINE (no heartbeat).\"\n  ]\n}",
+ "latency_s": 1.68,
+ "prompt_tokens": 1435,
+ "completion_tokens": 140
+}

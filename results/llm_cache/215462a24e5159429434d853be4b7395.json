@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"billing\",\n \"article_id\": \"KB-10\",\n \"escalate\": false,\n \"escalation_reason\": \"Billing count questions do not require escalation.\",\n \"reply_draft\": \"Your monthly invoice is based on the active collars registered to your farm during the billing period. Fleet support\",\n \"facts_used\": []\n}",
+ "latency_s": 1.23,
+ "prompt_tokens": 1307,
+ "completion_tokens": 80
+}

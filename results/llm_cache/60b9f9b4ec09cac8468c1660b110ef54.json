@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"firmware_bad\",\n \"article_id\": \"KB-03\",\n \"escalate\": true,\n \"escalation_reason\": \"Firmware 3.5.0 regression is affecting multiple collars on the farm.\",\n \"reply_draft\": \"Hi Carla,\\n\\nThanks for reaching out about C-10112 and the battery levels following the recent update. We are currently tracking an issue with firmware 3.5.0 affecting collar batteries across the farm.\\n\\nFleet support\",\n \"facts_used\": [\n  \"Incident INC-0017 (open, critical): Firmware 3.5.0 regression: 317 collars on 6 farms; 39 collars on this farm.\",\n  \"Collar C-10112 (firmware 3.5.0, tower T-04): reporting; battery 76.0 %; night drain 0.39 %/h (was 0.27); GPS fix 80.0 %, HDOP 1.5 (was 1.5); temperature +0.1 C vs the farm; signal -2.6 dB vs its normal; in incident INC-0017.\"\n ]\n}",
+ "latency_s": 1.78,
+ "prompt_tokens": 1611,
+ "completion_tokens": 275
+}

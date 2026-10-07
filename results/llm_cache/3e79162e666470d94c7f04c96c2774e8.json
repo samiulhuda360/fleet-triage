@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"firmware_bad\",\n \"article_id\": \"KB-03\",\n \"escalate\": true,\n \"escalation_reason\": \"Collar C-11932 is affected by firmware 3.5.0 regression causing increased drain and missing positions.\",\n \"reply_draft\": \"Hello Ned,\\n\\nWe have checked C-11932 and noted the missing positions. This is related to a known firmware issue currently under investigation. We are reviewing the affected collars on your farm.\\n\\nFleet support\",\n \"facts_used\": [\n  \"Collar C-11932 (firmware 3.5.0, tower T-59): reporting; battery 84.0 %; night drain 0.42 %/h (was 0.23); GPS fix 82.0 %, HDOP 1.4 (was 1.4); temperature -0.2 C vs the farm; signal +0.1 dB vs its normal; in incident INC-0017.\",\n  \"Incident INC-0017 (open, critical): Firmware 3.5.0 regression: 317 collars on 6 farms; 70 collars on this farm.\"\n ]\n}",
+ "latency_s": 2.67,
+ "prompt_tokens": 1616,
+ "completion_tokens": 281
+}

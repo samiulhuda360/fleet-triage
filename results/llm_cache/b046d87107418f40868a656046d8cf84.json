@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n  \"category\": \"alert_settings\",\n  \"article_id\": \"KB-12\",\n  \"escalate\": false,\n  \"escalation_reason\": \"\",\n  \"reply_draft\": \"Hello Aroha,\\n\\nYou can update where your alerts go directly through the farm app settings. Open the app, go to your notification or alert preferences, and you can change the recipient phone number to your farm manager's contact details.\\n\\nFleet support\",\n  \"facts_used\": [\n    \"Sender aroha.hartley@example.com is the contact for F-01\"\n  ]\n}",
+ "latency_s": 1.43,
+ "prompt_tokens": 1296,
+ "completion_tokens": 139
+}

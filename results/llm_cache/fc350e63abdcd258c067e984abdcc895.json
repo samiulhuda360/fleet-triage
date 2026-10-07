@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n  \"category\": \"account_access\",\n  \"article_id\": \"KB-09\",\n  \"escalate\": false,\n  \"escalation_reason\": \"Account access and user management questions do not require escalation.\",\n  \"reply_draft\": \"Hi Aroha,\\n\\nYou can add your son to your farm account by opening the farm app, navigating to the account or settings menu, and selecting the option to invite new staff or family members by entering their email address.\\n\\nFleet support\",\n  \"facts_used\": [\n    \"sender aroha.hartley@example.com is the contact for F-01\"\n  ]\n}",
+ "latency_s": 2.84,
+ "prompt_tokens": 1209,
+ "completion_tokens": 147
+}

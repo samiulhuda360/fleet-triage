@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n  \"category\": \"poor_coverage\",\n  \"article_id\": \"KB-06\",\n  \"escalate\": false,\n  \"escalation_reason\": \"Expected behavior for hill country topography where collars briefly drop signal behind ridges.\",\n  \"reply_draft\": \"Hello,\\n\\nTemporary signal drops behind big ridges and in gullies are expected behaviour in hill country. Your collars continue to work over the day and are reporting normally.\\n\\nFleet support\",\n  \"facts_used\": [\n    \"Fantail Run (F-29): 72 of 72 collars reported in the last 3 hours; median battery 93.0 % now vs 93.0 % three days ago.\"\n  ]\n}",
+ "latency_s": 1.78,
+ "prompt_tokens": 1391,
+ "completion_tokens": 165
+}

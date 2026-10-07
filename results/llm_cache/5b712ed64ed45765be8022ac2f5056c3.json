@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"alert_settings\",\n \"article_id\": \"KB-12\",\n \"escalate\": false,\n \"escalation_reason\": \"This is a how-to question about changing notification schedules and settings.\",\n \"reply_draft\": \"Hello, you can adjust your alert settings within the farm app to change when notifications are sent. Fleet support\",\n \"facts_used\": [\n  \"Silver Creek Ridge (F-09): 20 of 20 collars reported in the last 3 hours; median battery 97.0 % now vs 97.0 % three days ago.\"\n ]\n}",
+ "latency_s": 1.34,
+ "prompt_tokens": 1348,
+ "completion_tokens": 139
+}

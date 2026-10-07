@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"tower_outage\",\n \"article_id\": \"KB-01\",\n \"escalate\": true,\n \"escalation_reason\": \"Tower T-27 North ridge tower is offline, causing 24 collars to go silent.\",\n \"reply_draft\": \"Hello Sam,\\n\\nWe checked your setup at Flax Creek after your note about the North ridge tower. Tower T-27 is currently offline with no heartbeat, which has left 24 collars silent. We have logged this for our team to investigate.\\n\\nFleet support\",\n \"facts_used\": [\n  \"Tower T-27 North ridge tower: OFFLINE (no heartbeat).\",\n  \"Incident INC-0018 (open, critical): T-27 North ridge tower on Flax Creek offline: 24 collars silent; 24 collars on this farm.\"\n ]\n}",
+ "latency_s": 2.16,
+ "prompt_tokens": 1413,
+ "completion_tokens": 196
+}

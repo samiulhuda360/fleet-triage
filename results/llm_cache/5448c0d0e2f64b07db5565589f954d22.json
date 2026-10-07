@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"account_access\",\n \"article_id\": \"KB-09\",\n \"escalate\": true,\n \"escalation_reason\": \"Lost account access requires manual intervention.\",\n \"reply_draft\": \"Hello Finn,\\n\\nWe have received your request regarding your login issues and the password reset email not arriving. Our team will review your account access.\\n\\nFleet support\",\n \"facts_used\": [\n  \"Ticket received 16 Jul 10:00.\"\n ]\n}",
+ "latency_s": 1.23,
+ "prompt_tokens": 1205,
+ "completion_tokens": 115
+}

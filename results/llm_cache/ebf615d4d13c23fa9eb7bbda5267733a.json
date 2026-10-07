@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"collar_fit\",\n \"article_id\": \"KB-08\",\n \"escalate\": true,\n \"escalation_reason\": \"The collar case has physical damage from a gate.\",\n \"reply_draft\": \"Hello Tama, thank you for reaching out about collar C-10959. Because the case has a crack, we will review this for replacement. Fleet support\",\n \"facts_used\": [\n  \"Collar ids in the text: C-10959\"\n ]\n}",
+ "latency_s": 1.59,
+ "prompt_tokens": 1266,
+ "completion_tokens": 118
+}

@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n  \"category\": \"tower_outage\",\n  \"article_id\": \"KB-01\",\n  \"escalate\": true,\n  \"escalation_reason\": \"Base tower T-36 is offline and affecting all collars on Saddleback Ridge.\",\n  \"reply_draft\": \"Thanks for getting in touch about C-11086 and C-11087. We can see that tower T-36 is currently offline, which is affecting reporting across that side of your farm. You do not need to take the collars off.\\n\\nFleet support\",\n  \"facts_used\": [\n    \"Tower T-36 River flat tower: OFFLINE (no heartbeat).\",\n    \"Collar C-11086 (firmware 3.4.1, tower T-36): no report for 7 h (last 26 Jul 20:00); battery 66.0 %; night drain 0.3 %/h (was 0.28); GPS fix 94.0 %, HDOP 1.2 (was 1.2); temperature -0.1 C vs the farm; signal -0.4 dB vs its normal; in incident INC-0044.\",\n    \"Collar C-11087 (firmware 3.4.1, tower T-36): no report for 7 h (last 26 Jul 20:00); battery 99.0 %; night drain 0.24 %/h (was 0.19); GPS fix 97.0 %, HDOP 1.3 (was 1.4); temperature +0.4 C vs the farm; signal -0.2 dB vs its normal; in incident INC-0044.\"\n  ]\n}",
+ "latency_s": 1.78,
+ "prompt_tokens": 1704,
+ "completion_tokens": 407
+}

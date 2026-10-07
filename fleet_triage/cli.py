@@ -87,6 +87,10 @@ def main(argv: list[str] | None = None) -> None:
     tr.add_argument("--mode", choices=["bm25", "rules", "llm"], default="rules")
     tr.add_argument("--live", action="store_true", help="allow a live model call (needs AI_API_KEY)")
 
+    sv = sub.add_parser("serve", help="run the API and dashboard")
+    sv.add_argument("--host", default="127.0.0.1")
+    sv.add_argument("--port", type=int, default=8000)
+
     a = p.parse_args(argv)
     if a.cmd == "simulate":
         fleet = simulate(a.seed)
@@ -99,6 +103,10 @@ def main(argv: list[str] | None = None) -> None:
         _alerts(a)
     elif a.cmd == "triage":
         _triage(a)
+    elif a.cmd == "serve":
+        import uvicorn
+
+        uvicorn.run("fleet_triage.api.app:app", host=a.host, port=a.port)
 
 
 if __name__ == "__main__":

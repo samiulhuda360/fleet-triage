@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n  \"category\": \"firmware_bad\",\n  \"article_id\": \"KB-03\",\n  \"escalate\": true,\n  \"escalation_reason\": \"Firmware 3.5.0 regression affecting 39 collars on this farm.\",\n  \"reply_draft\": \"Hello Carla,\\n\\nThank you for reaching out. We are aware of the issue affecting your collars following the recent software update, as 39 collars on your farm are impacted by the current firmware regression.\\n\\nFleet support\",\n  \"facts_used\": [\n    \"Swamp Oak Station (F-03): 39 of 39 collars reported in the last 3 hours; median battery 49.0 % now vs 63.0 % three days ago.\",\n    \"Incident INC-0017 (open, critical): Firmware 3.5.0 regression: 317 collars on 6 farms; 39 collars on this farm.\"\n  ]\n}",
+ "latency_s": 1.7,
+ "prompt_tokens": 1474,
+ "completion_tokens": 221
+}

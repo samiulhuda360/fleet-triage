@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n  \"category\": \"setup_howto\",\n  \"article_id\": \"KB-11\",\n  \"escalate\": false,\n  \"escalation_reason\": \"\",\n  \"reply_draft\": \"Hello Mere,\\n\\nWhen you move a mob to a new paddock, you do not need to set up the collars again. They will continue to operate normally as you move the dry cows to the back block.\\n\\nFleet support\",\n  \"facts_used\": [\n    \"Ticket received 21 Jul 00:00.\"\n  ]\n}",
+ "latency_s": 1.51,
+ "prompt_tokens": 1250,
+ "completion_tokens": 128
+}

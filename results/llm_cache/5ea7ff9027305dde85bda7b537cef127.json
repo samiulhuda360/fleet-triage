@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"gps_drift\",\n \"article_id\": \"KB-05\",\n \"escalate\": true,\n \"escalation_reason\": \"Collar C-11636 is affected by GPS drift and requires escalation.\",\n \"reply_draft\": \"Hello Hamish, thanks for reaching out about C-11636. We can see that the track is looking like a scribble and the GPS readings are jumping. We are looking into this issue with collar C-11636 and will be in touch.\\n\\nFleet support\",\n \"facts_used\": [\n  \"Collar C-11636 (firmware 3.4.2, tower T-51): reporting; battery 99.0 %; night drain 0.3 %/h (was 0.3); GPS fix 85.0 %, HDOP 5.0 (was 2.2); temperature +0.0 C vs the farm; signal +0.5 dB vs its normal; in incident INC-0003.\",\n  \"Incident INC-0003 (open, medium): GPS drift on Willow Farm: 2 collars; 2 collars on this farm.\"\n ]\n}",
+ "latency_s": 1.59,
+ "prompt_tokens": 1595,
+ "completion_tokens": 271
+}

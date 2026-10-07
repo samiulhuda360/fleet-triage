@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"weather_low_charge\",\n \"article_id\": \"KB-07\",\n \"escalate\": false,\n \"escalation_reason\": \"Low solar charge after stormy weather is expected behaviour and does not require escalation.\",\n \"reply_dtraft\": \"Hi Kiri, yes, that is expected. Following three days of rain and low sunshine, solar-powered collars naturally show a drop in battery level as solar charging slows. Since all 65 collars reported recently and are still working normally, the batteries are healthy and will recharge once clear weather returns. Fleet support\",\n \"reply_draft\": \"Hi Kiri, yes, that is normal. Following three days of rain and low sunshine, solar-powered collars naturally show a drop in battery level as solar charging slows. Since all 65 collars reported recently and are still working, the batteries are healthy and will recharge once clear weather returns. Fleet support\",\n \"facts_used\": [\n  \"Bellbird Flats (F-11): 65 of 65 collars reported in the last 3 hours; median battery 76.0 % now vs 85.0 % three days ago.\",\n  \"Sunshine over the last 3 days at Bellbird Flats: 15 % of a clear sky.\"\n ]\n}",
+ "latency_s": 1.93,
+ "prompt_tokens": 1345,
+ "completion_tokens": 279
+}

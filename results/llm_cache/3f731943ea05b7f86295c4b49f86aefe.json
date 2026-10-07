@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n  \"category\": \"battery_fade\",\n  \"article_id\": \"KB-02\",\n  \"escalate\": true,\n  \"escalation_reason\": \"Collar C-10655 exhibits excessive night-time battery drain indicating cell degradation.\",\n  \"reply_draft\": \"Hello Nathan,\\n\\nThank you for reaching out about collar C-10655. We have reviewed the telemetry for your collar and noted the battery charge levels. We are looking into this further.\\n\\nFleet support\",\n  \"facts_used\": [\n    \"Collar C-10655 (firmware 3.4.2, tower T-20): reporting; battery 65.0 %; night drain 0.82 %/h (was 0.33); GPS fix 95.0 %, HDOP 1.4 (was 1.4); temperature +0.1 C vs the farm; signal -0.3 dB vs its normal;\"\n  ]\n}",
+ "latency_s": 1.46,
+ "prompt_tokens": 1563,
+ "completion_tokens": 228
+}

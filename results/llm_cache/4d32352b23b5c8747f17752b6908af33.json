@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"water_ingress\",\n \"article_id\": \"KB-04\",\n \"escalate\": true,\n \"escalation_reason\": \"Collar C-11190 is affected by water ingress following a creek crossing.\",\n \"reply_draft\": \"Hello Yvonne,\\n\\nThanks for reaching out about collar C-11190. We have logged this for investigation as it shows signs of water ingress after the creek crossing. Our team will review the details and follow up with you.\\n\\nFleet support\",\n \"facts_used\": [\n  \"Collar C-11190 (firmware 3.4.1, tower T-38): no report for 12 h (last 14 Jul 22:00); battery 95.0 %; night drain 0.32 %/h (was 0.27); GPS fix 99.0 %, HDOP 1.1 (was 1.1); temperature +10.8 C vs the farm; signal -12.4 dB vs its normal; in incident INC-0004.\",\n  \"Incident INC-0004 (open, high): Water ingress on Kanuka Run: 1 collar; 1 collars on this farm.\"\n ]\n}",
+ "latency_s": 1.85,
+ "prompt_tokens": 1672,
+ "completion_tokens": 289
+}

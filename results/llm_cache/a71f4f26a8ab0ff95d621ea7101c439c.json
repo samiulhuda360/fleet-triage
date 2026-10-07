@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n  \"category\": \"poor_coverage\",\n  \"article_id\": \"KB-06\",\n  \"escalate\": false,\n  \"escalation_reason\": \"Collar C-11317 is functioning normally with good battery and reporting status, matching expected hill coverage behavior.\",\n  \"reply_draft\": \"Hello Chloe, collar C-11317 is currently reporting in with normal battery and GPS metrics. Intermittent dropouts on hill blocks can happen due to terrain, but these collars typically reconnect over the course of the day. Fleet support\",\n  \"facts_used\": [\n    \"Fantail Run (F-29): 72 of 72 collars reported in the last 3 hours; median battery 89.0 % now vs 88.0 % three days ago.\",\n    \"Collar C-11317 (firmware 3.4.1, tower T-44): reporting; battery 90.0 %; night drain 0.27 %/h (was 0.28); GPS fix 92.0 %, HDOP 1.2 (was 1.2); temperature -0.7 C vs the farm; signal -1.1 dB vs its normal;\"\n  ]\n}",
+ "latency_s": 1.75,
+ "prompt_tokens": 1482,
+ "completion_tokens": 282
+}

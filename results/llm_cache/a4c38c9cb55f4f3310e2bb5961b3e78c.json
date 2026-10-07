@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n  \"category\": \"alert_settings\",\n  \"article_id\": \"KB-12\",\n  \"escalate\": false,\n  \"escalation_reason\": \"\",\n  \"reply_draft\": \"Hello Finn, you can adjust which notifications the farm app sends by going into the alert settings in the app menu. All 47 of 47 collars are currently reporting with a median battery of 90.0 percent. Fleet support\",\n  \"facts_used\": [\n    \"Kingfisher Farm (F-32): 47 of 47 collars reported in the last 3 hours; median battery 90.0 % now vs 86.0 % three days ago.\"\n  ]\n}",
+ "latency_s": 1.46,
+ "prompt_tokens": 1293,
+ "completion_tokens": 160
+}

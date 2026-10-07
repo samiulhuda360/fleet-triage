@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"water_ingress\",\n \"article_id\": \"KB-04\",\n \"escalate\": true,\n \"escalation_reason\": \"Collar C-10292 has symptoms and data signatures matching water ingress.\",\n \"reply_draft\": \"Hello Fergus,\\n\\nYes, fog inside the window can indicate water inside the enclosure. I have escalated this issue for collar C-10292 to our team.\\n\\nFleet support\",\n \"facts_used\": [\n  \"Collar C-10292 (firmware 3.4.1, tower T-07): no report for 10 h (last 19 Jul 07:00); battery 95.0 %; night drain 0.36 %/h (was 0.33); GPS fix 96.0 %, HDOP 1.0 (was 1.0); temperature +9.5 C vs the farm; signal -11.6 dB vs its normal; in incident INC-0015.\"\n ]\n}",
+ "latency_s": 1.95,
+ "prompt_tokens": 1624,
+ "completion_tokens": 241
+}

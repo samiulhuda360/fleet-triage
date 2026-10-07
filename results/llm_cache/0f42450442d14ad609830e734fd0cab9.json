@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"billing\",\n \"article_id\": \"KB-10\",\n \"escalate\": false,\n \"escalation_reason\": \"Simple billing and account questions do not require escalation.\",\n \"reply_draft\": \"Hello Mere Lindsay,\\n\\nThanks for reaching out about your July charges. We are looking into your monthly invoice and will get back to you shortly.\\n\\nFleet support\",\n \"facts_used\": [\n  \"Ticket received 26 Jul 20:00.\"\n ]\n}",
+ "latency_s": 1.5,
+ "prompt_tokens": 1373,
+ "completion_tokens": 116
+}

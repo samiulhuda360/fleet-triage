@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"firmware_bad\",\n \"article_id\": \"KB-03\",\n \"escalate\": true,\n \"escalation_reason\": \"Firmware 3.5.0 regression is causing battery drain and track gaps across 41 collars on the farm.\",\n \"reply_draft\": \"Hello Maia, thank you for reaching out. We see that 41 of 41 collars are on 3.5.0 and reporting lower battery levels along with gaps in the tracks. Our team is looking into this issue. Fleet support\",\n \"facts_used\": [\n  \"Burnt Hill Hills (F-39): 41 of 41 collars reported in the last 3 hours; median battery 62.0 % now vs 85.0 % three days ago.\",\n  \"Incident INC-0017 (open, critical): Firmware 3.5.0 regression: 317 collars on 6 farms; 41 collars on this farm.\"\n ]\n}",
+ "latency_s": 1.71,
+ "prompt_tokens": 1440,
+ "completion_tokens": 223
+}

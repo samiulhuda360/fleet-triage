@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"water_ingress\",\n \"article_id\": \"KB-04\",\n \"escalate\": true,\n \"escalation_reason\": \"Collar C-10336 is affected by water ingress with abnormal temperature and signal drop.\",\n \"reply_draft\": \"Hello, thank you for reaching out about collar 10336. We have checked the telemetry for this collar, and it is currently involved in an active water ingress incident. Our team is looking into the hardware issue. Fleet support\",\n \"facts_used\": [\n  \"Collar C-10336 (firmware 3.4.1, tower T-09): no report for 15 h (last 24 Jul 11:00); battery 44.0 %; night drain 0.26 %/h (was 0.28); GPS fix 94.0 %, HDOP 1.2 (was 1.3); temperature +12.1 C vs the farm; signal -11.5 dB vs its normal; in incident INC-0035.\"\n ]\n}",
+ "latency_s": 1.89,
+ "prompt_tokens": 1631,
+ "completion_tokens": 251
+}

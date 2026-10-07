@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"water_ingress\",\n \"article_id\": \"KB-04\",\n \"escalate\": true,\n \"escalation_reason\": \"Collar C-10798 is involved in an incident of water ingress after showing a high temperature spike and then going offline.\",\n \"reply_draft\": \"Hello Quinn, regarding collar C-10798, we see it had a high temperature reading and then stopped reporting. We are looking into this hardware issue. Fleet support\",\n \"facts_used\": [\n  \"Collar C-10798 (firmware 3.4.1, tower T-24): no report for 6 h (last 16 Jul 00:00); battery 83.0 %; night drain 0.3 %/h (was 0.3); GPS fix 96.0 %, HDOP 1.1 (was 1.2); temperature +8.4 C vs the farm; signal -11.5 dB vs its normal; in incident INC-0009.\",\n  \"Incident INC-0009 (open, high): Water ingress on Boulder Ridge: 2 collars; 2 collars on this farm.\"\n ]\n}",
+ "latency_s": 2.49,
+ "prompt_tokens": 1552,
+ "completion_tokens": 274
+}

@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n  \"category\": \"tower_outage\",\n  \"article_id\": \"KB-01\",\n  \"escalate\": true,\n  \"escalation_reason\": \"Tower T-36 is offline affecting 38 collars.\",\n  \"reply_draft\": \"Hello,\\n\\nWe can see that the map for Saddleback Ridge is frozen because tower T-36 is currently offline and not sending a heartbeat. We are investigating the issue with the tower. \\n\\nFleet support\",\n  \"facts_used\": [\n    \"Saddleback Ridge (F-24): 0 of 38 collars reported in the last 3 hours; median battery 96.0 % now vs 96.0 % three days ago.\",\n    \"Tower T-36 River flat tower: OFFLINE (no heartbeat).\",\n    \"Incident INC-0044 (open, critical): T-36 River flat tower on Saddleback Ridge offline: 38 collars silent; 38 collars on this farm.\"\n  ]\n}",
+ "latency_s": 1.55,
+ "prompt_tokens": 1400,
+ "completion_tokens": 234
+}

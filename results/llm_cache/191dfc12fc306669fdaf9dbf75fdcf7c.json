@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"weather_low_charge\",\n \"article_id\": \"KB-07\",\n \"escalate\": false,\n \"escalation_reason\": \"Low solar charge during grey weather is expected behavior and does not require escalation.\",\n \"reply_draft\": \"Hello Olivia,\\n\\nYes, the collar batteries will recover once sunshine levels return to normal. All 20 collars on Rimu Plains reported in the last 3 hours.\\n\\nFleet support\",\n \"facts_used\": [\n  \"Rimu Plains (F-15): 20 of 20 collars reported in the last 3 hours; median battery 61.0 % now vs 79.0 % three days ago.\",\n  \"Sunshine over the last 3 days at Rimu Plains: 11 % of a clear sky.\"\n ]\n}",
+ "latency_s": 1.51,
+ "prompt_tokens": 1399,
+ "completion_tokens": 187
+}

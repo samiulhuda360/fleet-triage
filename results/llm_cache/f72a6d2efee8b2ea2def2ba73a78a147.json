@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n  \"category\": \"tower_outage\",\n  \"article_id\": \"KB-01\",\n  \"escalate\": true,\n  \"escalation_reason\": \"North ridge tower T-27 is offline with missing heartbeat.\",\n  \"reply_draft\": \"Hi Sam, thanks for getting in touch. We can see that tower T-27 at Flax Creek is currently offline. Our team is looking into it. Fleet support\",\n  \"facts_used\": [\n    \"Tower T-27 North ridge tower: OFFLINE (no heartbeat).\"\n  ]\n}",
+ "latency_s": 1.44,
+ "prompt_tokens": 1441,
+ "completion_tokens": 130
+}

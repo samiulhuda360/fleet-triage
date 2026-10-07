@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"collar_fit\",\n \"article_id\": \"KB-08\",\n \"escalate\": false,\n \"escalation_reason\": \"Collar C-10959 is healthy and reporting normally with no hardware fault.\",\n \"reply_draft\": \"Hello,\\n\\nThanks for letting us know about C-10959. When putting a collar back on, ensure you can fit two fingers between the strap and the neck so it is snug but comfortable without slipping over the head. Collar C-10959 is currently reporting normally.\\n\\nFleet support\",\n \"facts_used\": [\n  \"Collar C-10959 (firmware 3.3.9, tower T-30): reporting; battery 92.0 %; night drain 0.33 %/h (was 0.27); GPS fix 98.0 %, HDOP 1.4 (was 1.4); temperature -0.0 C vs the farm; signal -0.2 dB vs its normal;\"\n ]\n}",
+ "latency_s": 1.73,
+ "prompt_tokens": 1372,
+ "completion_tokens": 240
+}

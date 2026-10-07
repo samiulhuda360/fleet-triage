@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"poor_coverage\",\n \"article_id\": \"KB-06\",\n \"escalate\": false,\n \"escalation_reason\": \"Data shows collar C-11317 is operating normally with good signal and battery, matching expected hill country coverage behavior.\",\n \"reply_draft\": \"Hello Chloe,\\n\\nThanks for reaching out about collar C-11317 on the back block. Collars in hill country blocks often drop in and out as animals move behind ridges or into gullies, with positions arriving later in the day. Our checks show that C-11317 and your other collars are reporting normally with strong batteries and healthy signals.\\n\\nFleet support\",\n \"facts_used\": [\n  \"Fantail Run (F-29): 72 of 72 collars reported in the last 3 hours; median battery 94.0 % now vs 90.0 % three days ago.\",\n  \"Collar C-11317 (firmware 3.4.1, tower T-44): reporting; battery 100.0 %; night drain 0.27 %/h (was 0.28); GPS fix 94.0 %, HDOP 1.2 (was 1.2); temperature -0.6 C vs the farm; signal +0.5 dB vs its normal;\"\n ]\n}",
+ "latency_s": 1.94,
+ "prompt_tokens": 1549,
+ "completion_tokens": 311
+}

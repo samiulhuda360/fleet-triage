@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n \"category\": \"alert_settings\",\n \"article_id\": \"KB-12\",\n \"escalate\": false,\n \"escalation_reason\": \"How-to request for notification settings and adding managers does not require escalation.\",\n \"reply_draft\": \"Hi Tama, you can adjust your notification settings and add additional contacts like your manager directly in the farm app menu under alert settings. Fleet support\",\n \"facts_used\": [\n  \"sender tama.underhill@example.com is the contact for F-20\"\n ]\n}",
+ "latency_s": 1.29,
+ "prompt_tokens": 1384,
+ "completion_tokens": 120
+}

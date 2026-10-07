@@ -1,0 +1,460 @@
+{
+  "splits": {
+    "dev": {
+      "bm25": {
+        "mode": "bm25",
+        "tickets": 60,
+        "category": 0.733,
+        "article": 0.733,
+        "article_top3": 0.983,
+        "linking": 1.0,
+        "incident": 0.909,
+        "incident_tickets": 33,
+        "escalation": 0.8,
+        "drafts_with_guard_hits": 2,
+        "escalation_floor_applied": 0,
+        "fallbacks": 0,
+        "runtime_s": 0.1,
+        "misses": [
+          {
+            "id": "D-06",
+            "expected": {
+              "category": "tower_outage",
+              "article": "KB-01",
+              "escalate": true
+            },
+            "got": {
+              "category": "poor_coverage",
+              "article": "KB-06",
+              "escalate": false
+            }
+          },
+          {
+            "id": "D-07",
+            "expected": {
+              "category": "tower_outage",
+              "article": "KB-01",
+              "escalate": true
+            },
+            "got": {
+              "category": "weather_low_charge",
+              "article": "KB-07",
+              "escalate": false
+            }
+          },
+          {
+            "id": "D-14",
+            "expected": {
+              "category": "battery_fade",
+              "article": "KB-02",
+              "escalate": true
+            },
+            "got": {
+              "category": "weather_low_charge",
+              "article": "KB-07",
+              "escalate": false
+            }
+          },
+          {
+            "id": "D-16",
+            "expected": {
+              "category": "firmware_bad",
+              "article": "KB-03",
+              "escalate": true
+            },
+            "got": {
+              "category": "weather_low_charge",
+              "article": "KB-07",
+              "escalate": false
+            }
+          },
+          {
+            "id": "D-17",
+            "expected": {
+              "category": "firmware_bad",
+              "article": "KB-03",
+              "escalate": true
+            },
+            "got": {
+              "category": "gps_drift",
+              "article": "KB-05",
+              "escalate": true
+            }
+          },
+          {
+            "id": "D-18",
+            "expected": {
+              "category": "firmware_bad",
+              "article": "KB-03",
+              "escalate": true
+            },
+            "got": {
+              "category": "weather_low_charge",
+              "article": "KB-07",
+              "escalate": false
+            }
+          },
+          {
+            "id": "D-22",
+            "expected": {
+              "category": "water_ingress",
+              "article": "KB-04",
+              "escalate": true
+            },
+            "got": {
+              "category": "tower_outage",
+              "article": "KB-01",
+              "escalate": true
+            }
+          },
+          {
+            "id": "D-24",
+            "expected": {
+              "category": "water_ingress",
+              "article": "KB-04",
+              "escalate": true
+            },
+            "got": {
+              "category": "tower_outage",
+              "article": "KB-01",
+              "escalate": true
+            }
+          },
+          {
+            "id": "D-25",
+            "expected": {
+              "category": "water_ingress",
+              "article": "KB-04",
+              "escalate": true
+            },
+            "got": {
+              "category": "tower_outage",
+              "article": "KB-01",
+              "escalate": true
+            }
+          },
+          {
+            "id": "D-27",
+            "expected": {
+              "category": "water_ingress",
+              "article": "KB-04",
+              "escalate": true
+            },
+            "got": {
+              "category": "collar_fit",
+              "article": "KB-08",
+              "escalate": false
+            }
+          },
+          {
+            "id": "D-33",
+            "expected": {
+              "category": "gps_drift",
+              "article": "KB-05",
+              "escalate": true
+            },
+            "got": {
+              "category": "firmware_bad",
+              "article": "KB-03",
+              "escalate": true
+            }
+          },
+          {
+            "id": "D-39",
+            "expected": {
+              "category": "weather_low_charge",
+              "article": "KB-07",
+              "escalate": false
+            },
+            "got": {
+              "category": "firmware_bad",
+              "article": "KB-03",
+              "escalate": true
+            }
+          },
+          {
+            "id": "D-40",
+            "expected": {
+              "category": "weather_low_charge",
+              "article": "KB-07",
+              "escalate": false
+            },
+            "got": {
+              "category": "alert_settings",
+              "article": "KB-12",
+              "escalate": false
+            }
+          },
+          {
+            "id": "D-43",
+            "expected": {
+              "category": "weather_low_charge",
+              "article": "KB-07",
+              "escalate": false
+            },
+            "got": {
+              "category": "battery_fade",
+              "article": "KB-02",
+              "escalate": true
+            }
+          },
+          {
+            "id": "D-47",
+            "expected": {
+              "category": "collar_fit",
+              "article": "KB-08",
+              "escalate": true
+            },
+            "got": {
+              "category": "collar_fit",
+              "article": "KB-08",
+              "escalate": false
+            }
+          },
+          {
+            "id": "D-49",
+            "expected": {
+              "category": "account_access",
+              "article": "KB-09",
+              "escalate": false
+            },
+            "got": {
+              "category": "setup_howto",
+              "article": "KB-11",
+              "escalate": false
+            }
+          },
+          {
+            "id": "D-50",
+            "expected": {
+              "category": "account_access",
+              "article": "KB-09",
+              "escalate": true
+            },
+            "got": {
+              "category": "account_access",
+              "article": "KB-09",
+              "escalate": false
+            }
+          },
+          {
+            "id": "D-53",
+            "expected": {
+              "category": "billing",
+              "article": "KB-10",
+              "escalate": true
+            },
+            "got": {
+              "category": "billing",
+              "article": "KB-10",
+              "escalate": false
+            }
+          },
+          {
+            "id": "D-54",
+            "expected": {
+              "category": "billing",
+              "article": "KB-10",
+              "escalate": true
+            },
+            "got": {
+              "category": "billing",
+              "article": "KB-10",
+              "escalate": false
+            }
+          },
+          {
+            "id": "D-55",
+            "expected": {
+              "category": "setup_howto",
+              "article": "KB-11",
+              "escalate": false
+            },
+            "got": {
+              "category": "account_access",
+              "article": "KB-09",
+              "escalate": false
+            }
+          }
+        ]
+      },
+      "rules": {
+        "mode": "rules",
+        "tickets": 60,
+        "category": 1.0,
+        "article": 1.0,
+        "article_top3": 1.0,
+        "linking": 1.0,
+        "incident": 0.909,
+        "incident_tickets": 33,
+        "escalation": 1.0,
+        "drafts_with_guard_hits": 0,
+        "escalation_floor_applied": 0,
+        "fallbacks": 0,
+        "runtime_s": 0.1,
+        "misses": []
+      },
+      "llm": {
+        "mode": "llm",
+        "tickets": 60,
+        "category": 1.0,
+        "article": 1.0,
+        "article_top3": 1.0,
+        "linking": 1.0,
+        "incident": 0.909,
+        "incident_tickets": 33,
+        "escalation": 0.967,
+        "drafts_with_guard_hits": 1,
+        "escalation_floor_applied": 0,
+        "fallbacks": 1,
+        "runtime_s": 4.5,
+        "misses": [
+          {
+            "id": "D-48",
+            "expected": {
+              "category": "account_access",
+              "article": "KB-09",
+              "escalate": false
+            },
+            "got": {
+              "category": "account_access",
+              "article": "KB-09",
+              "escalate": true
+            }
+          },
+          {
+            "id": "D-54",
+            "expected": {
+              "category": "billing",
+              "article": "KB-10",
+              "escalate": true
+            },
+            "got": {
+              "category": "billing",
+              "article": "KB-10",
+              "escalate": false
+            }
+          }
+        ],
+        "llm_calls": {
+          "live": 1,
+          "cached": 59,
+          "failed": 0,
+          "median_latency_s": 1.61,
+          "p95_latency_s": 2.16,
+          "prompt_tokens": 87684,
+          "completion_tokens": 12681,
+          "est_cost_usd": 0.0138,
+          "guard_reasons": [
+            "promise: guarantee"
+          ]
+        }
+      }
+    },
+    "heldout": {
+      "bm25": {
+        "mode": "bm25",
+        "tickets": 15,
+        "category": 0.933,
+        "article": 0.933,
+        "article_top3": 1.0,
+        "linking": 1.0,
+        "incident": 1.0,
+        "incident_tickets": 8,
+        "escalation": 0.933,
+        "drafts_with_guard_hits": 0,
+        "escalation_floor_applied": 0,
+        "fallbacks": 0,
+        "runtime_s": 0.0,
+        "misses": [
+          {
+            "id": "H-07",
+            "expected": {
+              "category": "water_ingress",
+              "article": "KB-04",
+              "escalate": true
+            },
+            "got": {
+              "category": "tower_outage",
+              "article": "KB-01",
+              "escalate": true
+            }
+          },
+          {
+            "id": "H-13",
+            "expected": {
+              "category": "billing",
+              "article": "KB-10",
+              "escalate": true
+            },
+            "got": {
+              "category": "billing",
+              "article": "KB-10",
+              "escalate": false
+            }
+          }
+        ]
+      },
+      "rules": {
+        "mode": "rules",
+        "tickets": 15,
+        "category": 1.0,
+        "article": 1.0,
+        "article_top3": 1.0,
+        "linking": 1.0,
+        "incident": 1.0,
+        "incident_tickets": 8,
+        "escalation": 1.0,
+        "drafts_with_guard_hits": 0,
+        "escalation_floor_applied": 0,
+        "fallbacks": 0,
+        "runtime_s": 0.0,
+        "misses": []
+      },
+      "llm": {
+        "mode": "llm",
+        "tickets": 15,
+        "category": 1.0,
+        "article": 1.0,
+        "article_top3": 1.0,
+        "linking": 1.0,
+        "incident": 1.0,
+        "incident_tickets": 8,
+        "escalation": 0.933,
+        "drafts_with_guard_hits": 2,
+        "escalation_floor_applied": 0,
+        "fallbacks": 2,
+        "runtime_s": 26.4,
+        "misses": [
+          {
+            "id": "H-13",
+            "expected": {
+              "category": "billing",
+              "article": "KB-10",
+              "escalate": true
+            },
+            "got": {
+              "category": "billing",
+              "article": "KB-10",
+              "escalate": false
+            }
+          }
+        ],
+        "llm_calls": {
+          "live": 11,
+          "cached": 4,
+          "failed": 0,
+          "median_latency_s": 1.62,
+          "p95_latency_s": 1.94,
+          "prompt_tokens": 22204,
+          "completion_tokens": 3299,
+          "est_cost_usd": 0.0035,
+          "guard_reasons": [
+            "promise: guarantee",
+            "promise: timeline"
+          ]
+        }
+      }
+    }
+  }
+}

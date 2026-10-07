@@ -1,0 +1,7 @@
+{
+ "model": "gemini-flash-lite-latest",
+ "content": "{\n  \"category\": \"poor_coverage\",\n  \"article_id\": \"KB-06\",\n  \"escalate\": false,\n  \"escalation_reason\": \"Low signal bars in hilly terrain are expected behaviour and do not require escalation.\",\n  \"reply_draft\": \"Hello Chloe, thanks for getting in touch about signal bars at Fantail Run. In hilly country, it is completely normal to see low signal bars when collars are operating in gullies or behind ridges, and you do not need new collars. All 72 of your collars have reported recently with normal battery levels, so your system is functioning as expected despite the terrain. Fleet support\",\n  \"facts_used\": [\n    \"Fantail Run (F-29): 72 of 72 collars reported in the last 3 hours; median battery 89.0 % now vs 89.0 % three days ago.\"\n  ]\n}",
+ "latency_s": 1.8,
+ "prompt_tokens": 1385,
+ "completion_tokens": 202
+}
