@@ -57,12 +57,11 @@ The technical setup is further down.
 ## Overview
 
 Monitoring, failure detection and support triage for a fleet of GPS livestock collars and solar base towers.
-It replays 30 days of hourly telemetry from 2,000 collars on 40 farms, finds the known failure modes, groups
-thousands of detector signals into a few dozen incidents with severity and impact, sends them to a webhook (a web
-address that receives alerts, for example a chat channel),
-and helps a support person answer farmers' tickets with the device data, the matching known-issue article and a
-draft reply. A person makes every decision.
-
+It replays 30 days of hourly telemetry (the readings each device sends home) from 2,000 collars on 40 farms,
+finds the known failure modes, groups thousands of detector signals into a few dozen incidents with severity and
+impact, sends them to a webhook (a web address that receives alerts, for example a chat channel), and helps a
+support person answer farmers' tickets with the device data, the matching known-issue article and a draft reply.
+A person makes every decision.
 
 ## What it is for
 
