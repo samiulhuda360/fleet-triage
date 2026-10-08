@@ -1,12 +1,68 @@
 # Fleet Triage
 
+![Demo: replaying the fleet to a storm, opening the tower incident, drilling into a collar and escalating a ticket](docs/demo.gif)
+
+*A short recording of the dashboard: winding the clock forward to a storm, opening the tower that went down, looking
+at one collar's battery history, and passing a farmer's ticket to a specialist.*
+
+## What it does
+
+Farmers put GPS collars on their cattle so they can see where the herd is from their phone. The collars talk to
+solar-powered radio towers on each farm. This project watches thousands of collars and towers, spots the ones that
+are failing before the farmer notices, and helps the support team answer farmers' messages with the right
+explanation. A person makes every decision.
+
+## A real-life example
+
+Tom works on the support desk at Acme Pasture, which makes the collars. Its customers have 2,000 collars on 40 farms.
+
+**Before:** after a storm, simple low-battery and no-signal alarms go off for hundreds of collars at once. Over a
+month that is close to a thousand alarms, and they fire for a hilly farm where nothing is actually wrong. Then the
+messages arrive. Yvonne writes: "C-11185 keeps going flat. Comes back in the morning then gone again at night. Is it
+the cloud?" Tom has to dig through the collar's data and the help articles to work out whether it is the weather,
+the tower, a software update or a worn-out battery.
+
+**With Fleet Triage:**
+1. The overview shows every farm, how many collars are reporting and the problems open right now.
+2. Thousands of warning signs are grouped into a short list of real problems, such as "the tower on Flax Creek is
+   down, 24 collars silent", each with how serious it is and how many farms it affects.
+3. Yvonne's message is already linked to her farm and her collar. The app shows the collar's recent readings,
+   suggests the matching help article (here: the battery is wearing out) and drafts a reply for Tom to edit.
+4. Tom approves the reply, edits it, or passes the ticket to a specialist. Nothing is sent by the app.
+
+**After:** in testing on a month the system had never seen, it found every planted fault and named it correctly,
+with one healthy collar flagged by mistake. A tower that went down was spotted in a median of 3 hours. Simple
+alarms fired 988 times that month; Fleet Triage sent 79 notifications. On the support side it suggested the right
+help article for all 15 test messages.
+
+![Tom's morning in four steps: the fleet overview, a tower outage, Yvonne's message, and her collar's battery chart](docs/screenshots/example.gif)
+
+*Tom's morning in four steps, from real screens of the dashboard: the whole fleet at a glance, a tower outage shown
+as one problem, Yvonne's message with a suggested answer, and the battery chart that explains it.*
+
+## How you would use it
+
+1. Open the dashboard in your web browser.
+2. **Fleet overview:** check how many collars are reporting and which farms have a problem. Drag the replay slider
+   to see any hour of the last 30 days.
+3. **Incidents:** click a problem to see which collars and farms it affects, a chart of what happened, and the
+   alerts that were sent.
+4. **Collar drill-down:** type a collar number to see its battery, solar charge, signal and GPS readings next to the
+   rest of its farm.
+5. **Triage queue:** open a farmer's message, read the suggested article and draft, then click approve, escalate or
+   reject.
+
+The technical setup is further down.
+
+## Overview
+
 Monitoring, failure detection and support triage for a fleet of GPS livestock collars and solar base towers.
 It replays 30 days of hourly telemetry from 2,000 collars on 40 farms, finds the known failure modes, groups
-thousands of detector signals into a few dozen incidents with severity and impact, sends them to a webhook,
+thousands of detector signals into a few dozen incidents with severity and impact, sends them to a webhook (a web
+address that receives alerts, for example a chat channel),
 and helps a support person answer farmers' tickets with the device data, the matching known-issue article and a
 draft reply. A person makes every decision.
 
-![Demo: replaying the fleet to a storm, opening the tower incident, drilling into a collar and escalating a ticket](docs/demo.gif)
 
 ## What it is for
 
@@ -17,22 +73,24 @@ collar maker, **Acme Pasture**, with every number measured against planted groun
 
 **Key features**
 
-- **Seeded fleet simulator**: 2,000 collars, 60 solar towers, weather, firmware rollouts and six planted
+- **Seeded fleet simulator** (realistic made-up data that comes out the same every run): 2,000 collars, 60 solar towers, weather, firmware rollouts and six planted
   failure modes with ground truth (device ids, start time, type), including a noisy-but-healthy farm that
   exists only to count false positives.
-- **Detection**: rules for the known failure modes, per-collar robust z-scores and a per-cohort
-  IsolationForest, all computed causally so every alert has a realistic time to detect.
+- **Detection**: rules for the known failure modes, per-collar robust z-scores (how far a reading is from that
+  collar's own normal) and a per-cohort IsolationForest (a method that spots collars behaving unlike their
+  neighbours), all computed causally so every alert has a realistic time to detect.
 - **Incidents, not alert storms**: one incident per tower outage, per firmware version or per failure mode per
   farm, with severity, collars and farms affected. 23,500 detector signals become 55 incidents and 79
   notifications.
 - **Alert hook**: incident notifications to any webhook in JSON, Slack or Telegram format, deduplicated by a
   ledger and retried on failure. A mock receiver is built in.
 - **Triage assistant**: 75 farmer-written tickets linked to farms and collars, device facts pulled at ticket
-  time, BM25 plus rules retrieval over 12 known-issue articles, an optional model step with structured JSON
-  output, and guards against promises and invented device facts.
+  time, BM25 (keyword search ranking) plus rules retrieval over 12 known-issue articles, an optional model step (an AI language model) with structured JSON
+  output (answers in a fixed, machine-readable form), and guards against promises and invented device facts.
 - **Dashboard**: FastAPI backend and a React + TypeScript dashboard with a fleet overview you can replay to any
   hour, incidents with evidence and alerts, collar drill-down charts and the triage queue.
-- **Evaluation**: detection precision, recall and time to detect per failure mode on a development seed and a
+- **Evaluation**: detection precision (how many alerts were real), recall (how many real faults were found) and
+  time to detect per failure mode on a development seed and a
   held-out seed; triage accuracy on 60 development and 15 held-out tickets.
 
 ## Screenshots
@@ -40,8 +98,10 @@ collar maker, **Acme Pasture**, with every number measured against planted groun
 | Fleet overview | Incidents |
 |---|---|
 | ![Fleet overview with KPIs, reporting and battery trends, top incidents and the farm grid](docs/screenshots/overview.png) | ![Tower outage incident with impact, chart, evidence and the alerts it sent](docs/screenshots/incidents.png) |
+| The whole fleet at a glance: collars reporting, open problems, battery trends and a tile per farm. | One tower outage: 24 collars went quiet, the chart of what happened, the evidence and the alerts sent. |
 | **Collar drill-down** | **Triage queue** |
 | ![Collar with battery fade: battery, solar, signal, temperature, GPS fix and HDOP against the farm median](docs/screenshots/device.png) | ![Ticket linked to a farm and collar, device facts, suggested article, retrieval candidates and the draft](docs/screenshots/triage.png) |
+| One collar against its farm's average: the battery falls away every night, the sign of a worn battery. | A farmer's message linked to her farm and collar, the suggested help article and a reply to edit. |
 
 ## Architecture
 
